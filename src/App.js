@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import Main from "./components/Main"
 import Login from "./pages/Login"
 import Home from "./pages/Home"
+import Detail from "./pages/Detail"
 import {
   BrowserRouter,
   Routes,
@@ -24,6 +25,7 @@ function App(){
   <Route path="/" element={<Home/>}/>
   <Route path="/login" element={<Login/>}/>
   <Route path="/signup" element={<Register/>}/>
+  <Route path="/detail/:id" element={<Detail/>}/>
 </Routes>
 </BrowserRouter>
 </div>)
@@ -320,4 +322,48 @@ cmd --> git remote add origin https://github.com/zeeshik62/React-App.git
 
 whatever is in local system (git) it will push all to remote (github)
 
+commands for add you work from local system to remote or
+from git to github
+1- git add .
+2- git commit -m "message"
+3- git push
+
+shows status
+cmd --> git status
+
+who does changes
+cmd --> git log
+
+let a=23
+string literal inside backtik(``) let str=`hello i am $a years old`
+
+for displaying different details of every product when you click on them
+
+"/detail/:id"
+
+:id means what ever in your url in place of id it got stored in variable 
+after : in this case it is id
+step 1:
+build a Url
+
+match the url in routes by declaring variable followed by the colon
+
+step 3:
+how to grab Url parameters it can be more than one
+in short they are called params
+
+step 4:
+based on this id search the product out of the whole list that is
+to be displayed
+useParams();
+grabs all the parameters from Url
+it return an object
+
+=== means type and data both should match
+p.id === id
+whenever you intrudces any thing in url it will be in string type
+== only data should match
+
+to convert id to number
+Number(id)
 */}

@@ -1,5 +1,6 @@
 import react from 'react'
 import p1 from '../assets/img/1.png'
+import {Link} from 'react-router-dom'
 // props={
 //   prod:{
 //     tiltle:'',
@@ -13,6 +14,7 @@ const Cards=({prod})=>{
 
     return(
         <div className="col-md-4"> 
+        <Link to={`/detail/${prod.id}`}>
         <div className="card" >
           <img className="card-img-top" src={p1} alt="Card image cap"/>
           <div className="card-body">
@@ -21,6 +23,7 @@ const Cards=({prod})=>{
             <a href="#" className="btn btn-primary">PKR {prod.Price}/-</a>
           </div>
         </div>
+        </Link>
        </div>
     )
 }

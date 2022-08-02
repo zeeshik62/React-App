@@ -276,9 +276,14 @@ replaced
 scm stands for source configuration manager where source is
 source code
 
+for git initialization
+cmd--> git init
+
 cra template make your project make git project automatically 
 and starts tracking
-
+ master after you project path in terminal is root directory
+ and it got removed after conflict of master and slave
+ in africa and other countries 
 there are stages in GIt
 1st stage is untracked (U) means untracked
 (M) Stands for modified
@@ -303,10 +308,16 @@ there are two types of repository one is local and other is remote
 
 git is local where github is remote
 git track changes in local system i.e. in local repo
- now for sending your work from staging are to local use cmd
- git comit -m wher -m is flag to add comment or msg to tell what you have done
- like (design home page)
+now for sending your work from staging are to local use cmd
+git comit -m wher -m is flag to add comment or msg to tell what you have done
+like (design home page)
 
+due to master slave conflicts master replaced with Main
+cmd--> git branch -M main
 
+Add remote origin
+cmd --> git remote add origin https://github.com/zeeshik62/React-App.git
+
+whatever is in local system (git) it will push all to remote (github)
 
 */}

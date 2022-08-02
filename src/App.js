@@ -282,14 +282,31 @@ and starts tracking
 there are stages in GIt
 1st stage is untracked (U) means untracked
 (M) Stands for modified
+(A) means added in stagin area
+
 every command of git starts with git
 repository is like a folder its a term of git
 directory term is for windows
-cmd-> git add . where . mean current directory and ./ means 
-inside current directory
+
+cmd-> git add . where . mean current directory and 
+./ means inside current directory
+
 working directory or repositry is workspace
 after completing todays work you have to add your work at staging 
 where you submit all the work and do review and if any change is required 
 you have o move your work to work space and do changes and
-then add it back to staging then review the changes
+then add it back to staging then review the changes.
+
+after completing your work and you want to submit your final work
+you are going to submit it to repository which is local
+there are two types of repository one is local and other is remote
+
+git is local where github is remote
+git track changes in local system i.e. in local repo
+ now for sending your work from staging are to local use cmd
+ git comit -m wher -m is flag to add comment or msg to tell what you have done
+ like (design home page)
+
+
+
 */}

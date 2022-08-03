@@ -366,4 +366,39 @@ whenever you intrudces any thing in url it will be in string type
 
 to convert id to number
 Number(id)
+
+
+
+Lecture-08
+
+==whenver event occurs every event throughs an object event can be
+any like on change on click on blur and we can recieve that object
+in function definition as an argument.
+
+whenver change occurs change will also occus in console
+using console.log(e)
+
+event object property 'target' gives reference of  element on which
+event occurs 
+
+now use e.target which will give only target property of object
+
+e.target.value will give you the value 
+const handlePasswordChange = (e)=>{
+  setPassword(e.target.value)
+}
+inside <form> there is function onSubmit which will trigger
+automatically when you click on submit button with type submit
+ const handleSubmit = (event)=>{
+console.log(email,password)
+ }
+form onSubmit={handleSubmit}>
+
+form submit has a default behaviour that it send request to the server 
+we have to prevent it using event.preventDefault();
+
+ const handleSubmit = (event)=>{
+ event.preventDefault();
+console.log(email,password)
+ }
 */}
